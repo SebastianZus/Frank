@@ -97,6 +97,9 @@
 		65DBDDF616A89E72007D3D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305CA7A31642063E00C4ACE5 /* Foundation.framework */; };
 		9B3E52AF163FB98300EB24C2 /* LocationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B3E52AD163FB98300EB24C2 /* LocationCommand.h */; };
 		9B3E52B0163FB98300EB24C2 /* LocationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E52AE163FB98300EB24C2 /* LocationCommand.m */; };
+		9ECC5ABC17A9591E00F9E33F /* UITableView+Frank.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC5ABA17A9591E00F9E33F /* UITableView+Frank.m */; };
+		9ECC5ABD17A9591E00F9E33F /* UITableView+Frank.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECC5ABB17A9591E00F9E33F /* UITableView+Frank.h */; };
+		9ECC5AC017A9621600F9E33F /* UIView+PublicAutomation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECC5ABF17A9621600F9E33F /* UIView+PublicAutomation.h */; };
 		A91F3AA615F6E456003F434F /* ExitCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = A91F3AA415F6E456003F434F /* ExitCommand.h */; };
 		A91F3AA715F6E456003F434F /* ExitCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A91F3AA515F6E456003F434F /* ExitCommand.m */; };
 		AA747D9F0F9514B9006C5449 /* Frank_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Frank_Prefix.pch */; };
@@ -323,6 +326,9 @@
 		65DBDDFB16A89E72007D3D43 /* libCocoaLumberjackMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaLumberjackMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3E52AD163FB98300EB24C2 /* LocationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationCommand.h; sourceTree = "<group>"; };
 		9B3E52AE163FB98300EB24C2 /* LocationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCommand.m; sourceTree = "<group>"; };
+		9ECC5ABA17A9591E00F9E33F /* UITableView+Frank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Frank.m"; sourceTree = "<group>"; };
+		9ECC5ABB17A9591E00F9E33F /* UITableView+Frank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Frank.h"; sourceTree = "<group>"; };
+		9ECC5ABF17A9621600F9E33F /* UIView+PublicAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PublicAutomation.h"; sourceTree = "<group>"; };
 		A91F3AA415F6E456003F434F /* ExitCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExitCommand.h; sourceTree = "<group>"; };
 		A91F3AA515F6E456003F434F /* ExitCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExitCommand.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* Frank_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frank_Prefix.pch; sourceTree = "<group>"; };
@@ -753,12 +759,15 @@
 		C9605E731606C57400170F88 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				9ECC5ABB17A9591E00F9E33F /* UITableView+Frank.h */,
+				9ECC5ABA17A9591E00F9E33F /* UITableView+Frank.m */,
 				C9605E681606BFAE00170F88 /* UIImage+Frank.h */,
 				C9605E691606BFAE00170F88 /* UIImage+Frank.m */,
 				D6A1D27E15A8D05E00EC056C /* UIView+Frank.m */,
 				C18A5EF3160D4AD300DC25F6 /* UIView+ImageCapture.h */,
 				C18A5EF4160D4AD300DC25F6 /* UIView+ImageCapture.m */,
 				C9605E661606BF8E00170F88 /* UIView+MapKitWorkaround.m */,
+				9ECC5ABF17A9621600F9E33F /* UIView+PublicAutomation.h */,
 				C18A5F1D160D547A00DC25F6 /* UIView+PublicAutomation.m */,
 				387BFA7C17036DDA007B9F17 /* UISlider+PublicAutomation.m */,
 				00E864BA161D6E6400E01209 /* UIScrollView+FrankScrolling.m */,
@@ -866,6 +875,8 @@
 				303CFCE416C80B830004BD05 /* DeviceCommand.h in Headers */,
 				30E82E3217128AB500E5BC7C /* ResolutionCommand.h in Headers */,
 				0626BFAE174300240020B33B /* DumpCommandRoute.h in Headers */,
+				9ECC5ABD17A9591E00F9E33F /* UITableView+Frank.h in Headers */,
+				9ECC5AC017A9621600F9E33F /* UIView+PublicAutomation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1240,6 +1251,7 @@
 				387BFA7D17036DDA007B9F17 /* UISlider+PublicAutomation.m in Sources */,
 				0626BFAF174300240020B33B /* DumpCommandRoute.m in Sources */,
 				3078E33C175417AE0016889C /* NSObject+FrankAutomation.m in Sources */,
+				9ECC5ABC17A9591E00F9E33F /* UITableView+Frank.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

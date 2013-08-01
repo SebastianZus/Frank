@@ -5,9 +5,7 @@
 //  Created by Pete Hodgson on 10/15/11.
 //  Copyright (c) 2011 ThoughtWorks. All rights reserved.
 //
-
 #import <PublicAutomation/UIAutomationBridge.h>
-
 #import "LoadableCategory.h"
 MAKE_CATEGORIES_LOADABLE(UIView_PublicAutomation)
 
